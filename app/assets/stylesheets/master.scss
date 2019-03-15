@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
 
 .clear {
 	clear: both;
@@ -51,3 +52,12 @@ header {
 hr {
 	clear:both;
 }
+
+h1 {
+	font-family: "Markazi Text", serif;
+}
+
+h2 {
+	font-family: "Markazi Text", serif;
+}
+
