@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+
+
 <html>
+
   <head>
+
     <title>Splurty</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,22 +15,51 @@
   </head>
 
   <body>
+
     <header class="row">
+
       <div class="col-3">
-      LOGO
+
+        <div class="circle">
+
+          <br />
+
+          Ideas
+
+          <br />
+
+          for
+
+          <br />
+
+          devs
+
+        </div>
+
       </div>
-      <div class="col-4">
+
+      <div class="col-4 slogan">
+
         Splurting out ideas for devs since 2019
+
       </div>
-      <div class="col-5">
+
+      <div class="col-5 links">
+
         <%= link_to 'Contribute', '#' %>
         <%= link_to 'About', '#' %>
+
       </div>
+
     </header>
+
+    <hr />
 
     <br class="clear" />
 
 
     <%= yield %>
+
   </body>
+
 </html>
