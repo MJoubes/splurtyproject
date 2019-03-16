@@ -1,5 +1,4 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
 
 .clear {
 	clear: both;
@@ -43,6 +42,8 @@
 	color: black;
 	font-size: 25px;
 	border-bottom: 1px solid #733CB0
+	font-family: 'markazi_textregular';
+	font-weight: bold;
 }
 
 header {
@@ -54,10 +55,12 @@ hr {
 }
 
 h1 {
-	font-family: "Markazi Text", serif;
+	font-family: 'montserratregular';
+	font-weight: bold;
+	font-size: 48px;
 }
 
 h2 {
-	font-family: "Markazi Text", serif;
+	font-family: 'markazi_textregular';
 }
 
