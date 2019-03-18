@@ -41,16 +41,19 @@
 
       </div>
 
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
 
         Splurting out ideas for devs since 2019
 
       </div>
 
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
 
         <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+
+        &nbsp;&nbsp;
+
         <%= link_to 'About', about_path %>
 
       </div>
@@ -81,17 +84,20 @@
 
 
           <div class="modal-body">
-          <%= f.input :saying %>
-          <%= f.input :author %>
-        </div>
+          <%= f.input :saying, label: "What is your idea?", placeholder: "Brilliant idea." %>
 
-        <div class="modal-footer">
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-          <%= f.submit 'Create', class: 'btn btn-danger' %>
+          <br />
           
-        </div>
+          <%= f.input :author, label: "Who are you?", placeholder: "Your name." %>
+          </div>
+
+             <div class="modal-footer">
+
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+               <%= f.submit 'Create', class: 'btn btn-danger' %>
+
+              </div>
 
             <% end %>
 
@@ -116,7 +122,9 @@
     <br class="clear" />
 
 <div class="container">
+
     <%= yield %>
+
 </div>
 
 <div class="footer">
@@ -133,11 +141,11 @@
 
       <div class="row">
 
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
           <%= link_to "I need another idea.", root_path, class: 'next-quote' %>
         </div>
 
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
 
             Proudly built by <a href="https://www.joubes.com/">Gage N.</a><br />
             Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
